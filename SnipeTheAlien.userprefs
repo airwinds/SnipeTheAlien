@@ -1,0 +1,37 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Sniper/SniperManager.cs">
+    <Files>
+      <File FileName="Assets/Scripts/AlienManager.cs" Line="24" Column="8" />
+      <File FileName="Assets/Scripts/UI/ToggleSniperScopeMode.cs" Line="50" Column="3" />
+      <File FileName="Assets/Scripts/PlayerInputManager.cs" Line="63" Column="48" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="5" Column="3" />
+      <File FileName="Assets/Scripts/Sniper/SniperCamera.cs" Line="27" Column="8" />
+      <File FileName="Assets/Scripts/Sniper/SniperManager.cs" Line="28" Column="25" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Assembly-CSharp" expanded="True">
+            <Node name="NGUI" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Interaction" expanded="True" />
+                <Node name="Internal" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Scripts" expanded="True">
+              <Node name="Sniper" expanded="True">
+                <Node name="SniperManager.cs" selected="True" />
+              </Node>
+              <Node name="UI" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
