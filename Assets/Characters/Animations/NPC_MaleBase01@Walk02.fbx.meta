@@ -1,0 +1,130 @@
+fileFormatVersion: 2
+guid: 9b0c79f96d4e94f809ea76cda455e834
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: NPC_Base01_RIG:Ankle_L
+    100002: NPC_Base01_RIG:Ankle_R
+    100004: NPC_Base01_RIG:Calvicle
+    100006: NPC_Base01_RIG:char
+    100008: NPC_Base01_RIG:Elbow_L
+    100010: NPC_Base01_RIG:Elbow_R
+    100012: NPC_Base01_RIG:Eyeball_Alien
+    100014: NPC_Base01_RIG:Fingers_01_L
+    100016: NPC_Base01_RIG:Fingers_01_R
+    100018: NPC_Base01_RIG:Fingers_02_L
+    100020: NPC_Base01_RIG:Fingers_02_R
+    100022: NPC_Base01_RIG:Head
+    100024: NPC_Base01_RIG:Hip_L
+    100026: NPC_Base01_RIG:Hip_R
+    100028: NPC_Base01_RIG:Jaw_Alien
+    100030: NPC_Base01_RIG:Jaw_Human
+    100032: NPC_Base01_RIG:Knee_L
+    100034: NPC_Base01_RIG:Knee_R
+    100036: NPC_Base01_RIG:Neck
+    100038: NPC_Base01_RIG:NPC_Alien_Male_Base01
+    100040: NPC_Base01_RIG:NPC_Human_Male_Base01
+    100042: NPC_Base01_RIG:Pelvic
+    100044: NPC_Base01_RIG:Shoulder_L
+    100046: NPC_Base01_RIG:Shoulder_R
+    100048: NPC_Base01_RIG:Spine_01
+    100050: NPC_Base01_RIG:Spine_02
+    100052: NPC_Base01_RIG:Thumb_01_L
+    100054: NPC_Base01_RIG:Thumb_01_R
+    100056: NPC_Base01_RIG:Thumb_02_L
+    100058: NPC_Base01_RIG:Thumb_02_R
+    100060: NPC_Base01_RIG:Wrist_L
+    100062: NPC_Base01_RIG:Wrist_R
+    100064: //RootNode
+    400000: NPC_Base01_RIG:Ankle_L
+    400002: NPC_Base01_RIG:Ankle_R
+    400004: NPC_Base01_RIG:Calvicle
+    400006: NPC_Base01_RIG:char
+    400008: NPC_Base01_RIG:Elbow_L
+    400010: NPC_Base01_RIG:Elbow_R
+    400012: NPC_Base01_RIG:Eyeball_Alien
+    400014: NPC_Base01_RIG:Fingers_01_L
+    400016: NPC_Base01_RIG:Fingers_01_R
+    400018: NPC_Base01_RIG:Fingers_02_L
+    400020: NPC_Base01_RIG:Fingers_02_R
+    400022: NPC_Base01_RIG:Head
+    400024: NPC_Base01_RIG:Hip_L
+    400026: NPC_Base01_RIG:Hip_R
+    400028: NPC_Base01_RIG:Jaw_Alien
+    400030: NPC_Base01_RIG:Jaw_Human
+    400032: NPC_Base01_RIG:Knee_L
+    400034: NPC_Base01_RIG:Knee_R
+    400036: NPC_Base01_RIG:Neck
+    400038: NPC_Base01_RIG:NPC_Alien_Male_Base01
+    400040: NPC_Base01_RIG:NPC_Human_Male_Base01
+    400042: NPC_Base01_RIG:Pelvic
+    400044: NPC_Base01_RIG:Shoulder_L
+    400046: NPC_Base01_RIG:Shoulder_R
+    400048: NPC_Base01_RIG:Spine_01
+    400050: NPC_Base01_RIG:Spine_02
+    400052: NPC_Base01_RIG:Thumb_01_L
+    400054: NPC_Base01_RIG:Thumb_01_R
+    400056: NPC_Base01_RIG:Thumb_02_L
+    400058: NPC_Base01_RIG:Thumb_02_R
+    400060: NPC_Base01_RIG:Wrist_L
+    400062: NPC_Base01_RIG:Wrist_R
+    400064: //RootNode
+    4300000: NPC_Base01_RIG:NPC_Human_Male_Base01
+    4300002: NPC_Base01_RIG:NPC_Alien_Male_Base01
+    7400000: NPC_Base01@Walk02
+    9500000: //RootNode
+    13700000: NPC_Base01_RIG:NPC_Alien_Male_Base01
+    13700002: NPC_Base01_RIG:NPC_Human_Male_Base01
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
