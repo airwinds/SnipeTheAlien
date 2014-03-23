@@ -1,6 +1,6 @@
 //Maya ASCII 2011 scene
-//Name: AE_Library01.ma
-//Last modified: Sun, Mar 23, 2014 11:46:35 AM
+//Name: AE_BLDG_Library01.ma
+//Last modified: Sun, Mar 23, 2014 12:25:44 PM
 //Codeset: UTF-8
 requires maya "2011";
 requires "Mayatomr" "2011.0m - 3.8.1.33 ";
@@ -5422,8 +5422,8 @@ createNode mesh -n "comm_school_grade_01:comm_playground_01:pTorusShape30" -p "c
 	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-createNode transform -n "AE_Library01";
-createNode mesh -n "AE_Library0Shape1" -p "AE_Library01";
+createNode transform -n "AE_BLDG_Library01";
+createNode mesh -n "AE_BLDG_Library0Shape1" -p "AE_BLDG_Library01";
 	setAttr -k off ".v";
 	setAttr -s 10 ".iog[0].og";
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 28 "f[0:4]" "f[6:79]" "f[975:990]" "f[995:1006]" "f[1021:1082]" "f[1160:1175]" "f[1180:1191]" "f[1206:1267]" "f[1341:1356]" "f[1361:1372]" "f[1387:1448]" "f[1522:1537]" "f[1542:1553]" "f[1568:1629]" "f[1797:1812]" "f[1817:1828]" "f[1843:1904]" "f[1982:1997]" "f[2002:2013]" "f[2028:2089]" "f[2163:2178]" "f[2183:2194]" "f[2209:2270]" "f[2344:2359]" "f[2364:2375]" "f[2390:2451]" "f[2570:2585]" "f[2590:2601]";
@@ -19989,7 +19989,7 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\tif ($useSceneConfig) {\n\t\tscriptedPanel -e -to $panelName;\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"visorPanel\" -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Texture Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"polyTexturePlacementPanel\" -l (localizedPanelLabel(\"UV Texture Editor\")) -mbv $menusOkayInPanels `;\n"
 		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Texture Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\tif ($useSceneConfig) {\n\t\tscriptedPanel -e -to $panelName;\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"renderWindowPanel\" -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"blendShapePanel\" (localizedPanelLabel(\"Blend Shape\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\tblendShapePanel -unParent -l (localizedPanelLabel(\"Blend Shape\")) -mbv $menusOkayInPanels ;\n"
 		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tblendShapePanel -edit -l (localizedPanelLabel(\"Blend Shape\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dynRelEdPanel\" -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"relationshipPanel\" -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels `;\n"
-		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"referenceEditorPanel\" -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"componentEditorPanel\" -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels `;\n"
+		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"referenceEditorPanel\" -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\tif ($useSceneConfig) {\n\t\tscriptedPanel -e -to $panelName;\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"componentEditorPanel\" -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels `;\n"
 		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dynPaintScriptedPanelType\" -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"scriptEditorPanel\" -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels `;\n"
 		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"Stereo\" -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels `;\nstring $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -editorChanged \"updateModelPanelBar\" \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n"
 		+ "                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 8192\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -maxConstantTransparency 1\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n"
@@ -21164,28 +21164,29 @@ connectAttr ":initialShadingGroup.mwc" "comm_school_grade_01:comm_playground_01:
 		;
 connectAttr "comm_school_grade_01:comm_playground_01:groupId69.id" "comm_school_grade_01:comm_playground_01:pTorusShape30.ciog.cog[0].cgid"
 		;
-connectAttr "groupId17.id" "AE_Library0Shape1.iog.og[0].gid";
-connectAttr "RoofItems_4ModelingUseOnly:Window_Door_Trim:blinn3SG.mwc" "AE_Library0Shape1.iog.og[0].gco"
+connectAttr "groupId17.id" "AE_BLDG_Library0Shape1.iog.og[0].gid";
+connectAttr "RoofItems_4ModelingUseOnly:Window_Door_Trim:blinn3SG.mwc" "AE_BLDG_Library0Shape1.iog.og[0].gco"
 		;
-connectAttr "groupId18.id" "AE_Library0Shape1.iog.og[1].gid";
-connectAttr "RoofItems_4ModelingUseOnly:Vent1SG.mwc" "AE_Library0Shape1.iog.og[1].gco"
+connectAttr "groupId18.id" "AE_BLDG_Library0Shape1.iog.og[1].gid";
+connectAttr "RoofItems_4ModelingUseOnly:Vent1SG.mwc" "AE_BLDG_Library0Shape1.iog.og[1].gco"
 		;
-connectAttr "groupId19.id" "AE_Library0Shape1.iog.og[2].gid";
-connectAttr "StoneBlocks1SG.mwc" "AE_Library0Shape1.iog.og[2].gco";
-connectAttr "groupId20.id" "AE_Library0Shape1.iog.og[3].gid";
-connectAttr "StoneBlocks2SG.mwc" "AE_Library0Shape1.iog.og[3].gco";
-connectAttr "groupId21.id" "AE_Library0Shape1.iog.og[4].gid";
-connectAttr "lambert16SG.mwc" "AE_Library0Shape1.iog.og[4].gco";
-connectAttr "groupId22.id" "AE_Library0Shape1.iog.og[5].gid";
-connectAttr "MetalSG.mwc" "AE_Library0Shape1.iog.og[5].gco";
-connectAttr "groupId23.id" "AE_Library0Shape1.iog.og[6].gid";
-connectAttr "museumdoors:WoodDoor1SG.mwc" "AE_Library0Shape1.iog.og[6].gco";
-connectAttr "groupId24.id" "AE_Library0Shape1.iog.og[7].gid";
-connectAttr "lambert5SG.mwc" "AE_Library0Shape1.iog.og[7].gco";
-connectAttr "groupId25.id" "AE_Library0Shape1.iog.og[8].gid";
-connectAttr "StoneBlocksSG.mwc" "AE_Library0Shape1.iog.og[8].gco";
-connectAttr "groupId26.id" "AE_Library0Shape1.iog.og[9].gid";
-connectAttr "lambert3SG.mwc" "AE_Library0Shape1.iog.og[9].gco";
+connectAttr "groupId19.id" "AE_BLDG_Library0Shape1.iog.og[2].gid";
+connectAttr "StoneBlocks1SG.mwc" "AE_BLDG_Library0Shape1.iog.og[2].gco";
+connectAttr "groupId20.id" "AE_BLDG_Library0Shape1.iog.og[3].gid";
+connectAttr "StoneBlocks2SG.mwc" "AE_BLDG_Library0Shape1.iog.og[3].gco";
+connectAttr "groupId21.id" "AE_BLDG_Library0Shape1.iog.og[4].gid";
+connectAttr "lambert16SG.mwc" "AE_BLDG_Library0Shape1.iog.og[4].gco";
+connectAttr "groupId22.id" "AE_BLDG_Library0Shape1.iog.og[5].gid";
+connectAttr "MetalSG.mwc" "AE_BLDG_Library0Shape1.iog.og[5].gco";
+connectAttr "groupId23.id" "AE_BLDG_Library0Shape1.iog.og[6].gid";
+connectAttr "museumdoors:WoodDoor1SG.mwc" "AE_BLDG_Library0Shape1.iog.og[6].gco"
+		;
+connectAttr "groupId24.id" "AE_BLDG_Library0Shape1.iog.og[7].gid";
+connectAttr "lambert5SG.mwc" "AE_BLDG_Library0Shape1.iog.og[7].gco";
+connectAttr "groupId25.id" "AE_BLDG_Library0Shape1.iog.og[8].gid";
+connectAttr "StoneBlocksSG.mwc" "AE_BLDG_Library0Shape1.iog.og[8].gco";
+connectAttr "groupId26.id" "AE_BLDG_Library0Shape1.iog.og[9].gid";
+connectAttr "lambert3SG.mwc" "AE_BLDG_Library0Shape1.iog.og[9].gco";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "StoneBlocksSG.message" ":defaultLightSet.message";
@@ -21273,13 +21274,13 @@ connectAttr "place2dTexture1.vc1" "file1.vc1";
 connectAttr "place2dTexture1.o" "file1.uv";
 connectAttr "place2dTexture1.ofs" "file1.fs";
 connectAttr "lambert7.oc" "StoneBlocksSG.ss";
-connectAttr "AE_Library0Shape1.iog.og[8]" "StoneBlocksSG.dsm" -na;
+connectAttr "AE_BLDG_Library0Shape1.iog.og[8]" "StoneBlocksSG.dsm" -na;
 connectAttr "groupId25.msg" "StoneBlocksSG.gn" -na;
 connectAttr "StoneBlocksSG.msg" "materialInfo2.sg";
 connectAttr "lambert7.msg" "materialInfo2.m";
 connectAttr "file1.msg" "materialInfo2.t" -na;
 connectAttr "lambert8.oc" "StoneBlocks1SG.ss";
-connectAttr "AE_Library0Shape1.iog.og[2]" "StoneBlocks1SG.dsm" -na;
+connectAttr "AE_BLDG_Library0Shape1.iog.og[2]" "StoneBlocks1SG.dsm" -na;
 connectAttr "groupId19.msg" "StoneBlocks1SG.gn" -na;
 connectAttr "StoneBlocks1SG.msg" "materialInfo3.sg";
 connectAttr "lambert8.msg" "materialInfo3.m";
@@ -21364,7 +21365,8 @@ connectAttr "museumdoors:WoodDoor1SG.msg" "museumdoors:materialInfo8.sg";
 connectAttr "lambert14.msg" "museumdoors:materialInfo8.m";
 connectAttr "museumdoors:file4.msg" "museumdoors:materialInfo8.t" -na;
 connectAttr "lambert14.oc" "museumdoors:WoodDoor1SG.ss";
-connectAttr "AE_Library0Shape1.iog.og[6]" "museumdoors:WoodDoor1SG.dsm" -na;
+connectAttr "AE_BLDG_Library0Shape1.iog.og[6]" "museumdoors:WoodDoor1SG.dsm" -na
+		;
 connectAttr "groupId23.msg" "museumdoors:WoodDoor1SG.gn" -na;
 connectAttr "museumdoors:place2dTexture7.c" "museumdoors:file4.c";
 connectAttr "museumdoors:place2dTexture7.tf" "museumdoors:file4.tf";
@@ -21386,7 +21388,7 @@ connectAttr "museumdoors:place2dTexture7.o" "museumdoors:file4.uv";
 connectAttr "museumdoors:place2dTexture7.ofs" "museumdoors:file4.fs";
 connectAttr "lambert10.oc" "RoofItems_4ModelingUseOnly:Window_Door_Trim:blinn3SG.ss"
 		;
-connectAttr "AE_Library0Shape1.iog.og[0]" "RoofItems_4ModelingUseOnly:Window_Door_Trim:blinn3SG.dsm"
+connectAttr "AE_BLDG_Library0Shape1.iog.og[0]" "RoofItems_4ModelingUseOnly:Window_Door_Trim:blinn3SG.dsm"
 		 -na;
 connectAttr "groupId17.msg" "RoofItems_4ModelingUseOnly:Window_Door_Trim:blinn3SG.gn"
 		 -na;
@@ -21398,7 +21400,7 @@ connectAttr "RoofItems_4ModelingUseOnly:file6.msg" "RoofItems_4ModelingUseOnly:W
 		 -na;
 connectAttr "lambert11.oc" "RoofItems_4ModelingUseOnly:Vent1SG.ss";
 connectAttr "groupId18.msg" "RoofItems_4ModelingUseOnly:Vent1SG.gn" -na;
-connectAttr "AE_Library0Shape1.iog.og[1]" "RoofItems_4ModelingUseOnly:Vent1SG.dsm"
+connectAttr "AE_BLDG_Library0Shape1.iog.og[1]" "RoofItems_4ModelingUseOnly:Vent1SG.dsm"
 		 -na;
 connectAttr "RoofItems_4ModelingUseOnly:Vent1SG.msg" "RoofItems_4ModelingUseOnly:materialInfo1.sg"
 		;
@@ -21534,7 +21536,7 @@ connectAttr "place2dTexture6.vc1" "file6.vc1";
 connectAttr "place2dTexture6.o" "file6.uv";
 connectAttr "place2dTexture6.ofs" "file6.fs";
 connectAttr "lambert13.oc" "MetalSG.ss";
-connectAttr "AE_Library0Shape1.iog.og[5]" "MetalSG.dsm" -na;
+connectAttr "AE_BLDG_Library0Shape1.iog.og[5]" "MetalSG.dsm" -na;
 connectAttr "groupId22.msg" "MetalSG.gn" -na;
 connectAttr "MetalSG.msg" "materialInfo9.sg";
 connectAttr "lambert13.msg" "materialInfo9.m";
@@ -21542,7 +21544,7 @@ connectAttr "file6.msg" "materialInfo9.t" -na;
 connectAttr "file11.oc" "roof.c";
 connectAttr "roof.oc" "lambert3SG.ss";
 connectAttr "groupId26.msg" "lambert3SG.gn" -na;
-connectAttr "AE_Library0Shape1.iog.og[9]" "lambert3SG.dsm" -na;
+connectAttr "AE_BLDG_Library0Shape1.iog.og[9]" "lambert3SG.dsm" -na;
 connectAttr "lambert3SG.msg" "materialInfo11.sg";
 connectAttr "roof.msg" "materialInfo11.m";
 connectAttr "file11.msg" "materialInfo11.t" -na;
@@ -21978,7 +21980,7 @@ connectAttr "comm_school_grade_01:comm_playground_01:groupId12.id" "comm_school_
 		;
 connectAttr "file12.oc" "clock.c";
 connectAttr "clock.oc" "lambert5SG.ss";
-connectAttr "AE_Library0Shape1.iog.og[7]" "lambert5SG.dsm" -na;
+connectAttr "AE_BLDG_Library0Shape1.iog.og[7]" "lambert5SG.dsm" -na;
 connectAttr "groupId24.msg" "lambert5SG.gn" -na;
 connectAttr "lambert5SG.msg" "materialInfo13.sg";
 connectAttr "clock.msg" "materialInfo13.m";
@@ -22236,7 +22238,7 @@ connectAttr "place2dTexture14.vc1" "file14.vc1";
 connectAttr "place2dTexture14.o" "file14.uv";
 connectAttr "place2dTexture14.ofs" "file14.fs";
 connectAttr "lambert9.oc" "StoneBlocks2SG.ss";
-connectAttr "AE_Library0Shape1.iog.og[3]" "StoneBlocks2SG.dsm" -na;
+connectAttr "AE_BLDG_Library0Shape1.iog.og[3]" "StoneBlocks2SG.dsm" -na;
 connectAttr "groupId20.msg" "StoneBlocks2SG.gn" -na;
 connectAttr "StoneBlocks2SG.msg" "materialInfo15.sg";
 connectAttr "lambert9.msg" "materialInfo15.m";
@@ -22249,7 +22251,7 @@ connectAttr "file6.oc" "lambert13.c";
 connectAttr "museumdoors:file4.oc" "lambert14.c";
 connectAttr "file15.oc" "lambert16.c";
 connectAttr "lambert16.oc" "lambert16SG.ss";
-connectAttr "AE_Library0Shape1.iog.og[4]" "lambert16SG.dsm" -na;
+connectAttr "AE_BLDG_Library0Shape1.iog.og[4]" "lambert16SG.dsm" -na;
 connectAttr "groupId21.msg" "lambert16SG.gn" -na;
 connectAttr "lambert16SG.msg" "materialInfo16.sg";
 connectAttr "lambert16.msg" "materialInfo16.m";
@@ -22446,4 +22448,4 @@ connectAttr "place2dTexture12.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "place2dTexture13.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "place2dTexture14.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "place2dTexture15.msg" ":defaultRenderUtilityList1.u" -na;
-// End of AE_Library01.ma
+// End of AE_BLDG_Library01.ma
