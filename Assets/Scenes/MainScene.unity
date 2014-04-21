@@ -482,6 +482,10 @@ Prefab:
       propertyPath: _toggleSniperScopeMode
       value: 
       objectReference: {fileID: 1912801296}
+    - target: {fileID: 11400000, guid: c4ea3d449751f44f2be7ac9072572591, type: 2}
+      propertyPath: _isAlien
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c4ea3d449751f44f2be7ac9072572591, type: 2}
   m_RootGameObject: {fileID: 624429868}
@@ -1070,7 +1074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _toggleSniperScopeMode: {fileID: 1912801296}
-  _isAlien: 0
+  _isAlien: 1
   _alienTexture: {fileID: 2100000, guid: b6c9c4a997bc54ffca78aeb1ac098ece, type: 2}
   _alienDisguisedTexture: {fileID: 2100000, guid: eae86930f52b14bb39e533d4671d05a9,
     type: 2}
